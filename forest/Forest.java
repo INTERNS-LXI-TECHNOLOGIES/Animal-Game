@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Forest
 {
 	
-ArrayList<Animal>animals=new ArrayList<>();
+ private ArrayList<Animal>animals=new ArrayList<>();
 
 private  String name;
-private  String Animals;
+
 
 public void createAnimals()
 {
@@ -32,13 +32,13 @@ public String getName()
 }
 
 
-public void setanimal(String Animals)
+public void setanimal(ArrayList<Animal> animals)
 {
-	this.Animals=Animals;
+	this.animals=animals;
 }
-public String getanimal()
+public ArrayList<Animal> getanimal()
 {
-	return Animals;
+	return animals;
 }
 
 public void inputForestDetails()
@@ -47,10 +47,10 @@ public void inputForestDetails()
 	System.out.println("********"+getName()+"********");
 	
 	System.out.println("*****ANIMALS ARE*****");
-	System.out.println(animals.get(0).getName());
-	System.out.println(animals.get(1).getName());
-	System.out.println(animals.get(2).getName());
-	System.out.println(animals.get(3).getName());
+	System.out.println(getanimal().get(0).getName());
+	System.out.println(getanimal().get(1).getName());
+	System.out.println(getanimal().get(2).getName());
+	System.out.println(getanimal().get(3).getName());
 	
 }
 
