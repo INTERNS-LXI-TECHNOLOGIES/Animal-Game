@@ -27,5 +27,7 @@ public class Animal
 	 {
 	 return null;
 	 }
+	 setHungryLevel((int) (Math.random()*50)+1);
+	 
 }
 
