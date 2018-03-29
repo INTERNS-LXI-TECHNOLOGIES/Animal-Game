@@ -1,19 +1,23 @@
 package com.lxisoft.animalgame.forest.animal;
 public class Tiger extends Animal
 {
-	private String animalType;
-	
-	public void setAnimalType(String type)
+	//Animal a = new Tiger();
+	public String typeName()
 	{
-		this.animalType = type;
-	}
-	public String getAnimalType()
-	{
-		return animalType;
-	}
-	
-	public void typeName()
-	{
+		//a.
 		setAnimalType("Tiger");
+		//a.
+		
+		return getAnimalType();
 	}
+	public void setHungryLevel()
+	{
+		int hungry=(int)((Math.random() *100)+1);
+		System.out.print(hungry);
+	}
+	public void setStrengthLevel()
+	{
+		int strength=(int)((Math.random() *100)+1);
+		System.out.print(strength);
+	}	
 }
