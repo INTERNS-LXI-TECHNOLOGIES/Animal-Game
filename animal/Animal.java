@@ -22,12 +22,26 @@ public class Animal
      public int getHungryLevel()
      {
 	    return hungryLevel;
-     } 	 
+     } 
+     public void setStrengthLevel(int strengthLevel)
+	 {
+		 this.strengthLevel = strengthLevel;
+	 }
+    public int getStrengthLevel()
+	{
+		return strengthLevel;
+	}	
 	 public String animalCharacteristics() 
 	 {
-	 return null;
+	 return "animal";
 	 }
-	 setHungryLevel((int) (Math.random()*50)+1);
+	 
+	 
+	/*public int setHungryLevel()
+	{
+	return setHungryLevel((int) (Math.random()*50)+1);
+	}*/
+	 
 	 
 }
 
