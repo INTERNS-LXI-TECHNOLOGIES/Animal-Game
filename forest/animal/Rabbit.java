@@ -1,10 +1,8 @@
 package com.lxisoft.animalgame.forest.animal;
 public class Rabbit extends Animal
 {
-	public String typename()
+	public String typeName()
 	{
-		//Animal a = new Rabbit();
-		//a.
 		setAnimalType("Rabbit");
 		return getAnimalType();
 	}

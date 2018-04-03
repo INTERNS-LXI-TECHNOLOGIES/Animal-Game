@@ -1,9 +1,9 @@
 package com.lxisoft.animalgame.forest.animal;
 public class Lion extends Animal
 {
-	public void typeName()
+	public String typeName()
 	{
-		Animal a = new Lion();
-		a.setAnimalType("Lion");
+		setAnimalType("Lion");
+		return getAnimalType();
 	}
 }

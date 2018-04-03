@@ -1,13 +1,7 @@
 package com.lxisoft.animalgame.forest.animal;
-public class Tiger extends Animal
-{
-	//Animal a = new Tiger();
-	public String typeName()
+ 	public String typeName()
 	{
-		//a.
-		setAnimalType("Tiger");
-		//a.
-		
+		setAnimalType("Tiger");		
 		return getAnimalType();
 	}
 	public void setHungryLevel()
