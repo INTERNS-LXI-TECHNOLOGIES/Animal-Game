@@ -5,7 +5,7 @@ public class Deer extends Animal
 	public void inputDeerDetails()
 	{
 		setTypeOfAnimal("*****dEer*****");
-		System.out.println(getTypeOfAnimal);
+		System.out.println(getTypeOfAnimal());
 	
 	}
 }

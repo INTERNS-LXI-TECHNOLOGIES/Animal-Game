@@ -5,6 +5,6 @@ public class Rabbit extends Animal
 	public void inputRabbitDetails()
 	{
 		setTypeOfAnimal("*****rAbbiT*****");
-		System.out.println(getTypeOfAnimal);
+		System.out.println(getTypeOfAnimal());
 	}
 }
