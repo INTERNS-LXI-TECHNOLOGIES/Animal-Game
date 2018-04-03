@@ -17,8 +17,9 @@ public class Forest
    ArrayList<Animal>animals = new ArrayList<>();
 	
     public void gameImplementation()
-	 {
-		
+	{
+		String animal1;
+		String animal2;
 		System.out.println("******GAME STARTS******");
 		setName("AMAZON FOREST");
 		System.out.println(getName());
@@ -57,23 +58,45 @@ public class Forest
         }
 		
 		 for(int j=0;j<animals.size();j++)
-		 {
+		{
 			if(animals.get(j).getHungryLevel()<10)
-			 {
+			{
 				 System.out.println("ready to fight"+(animals.get(j).animalCharacteristics()));
 
-			 }
+			}
 			if(animals.get(j).getStrengthLevel()<10)
 			{
 				System.out.println("animals dies"+(animals.get(j).animalCharacteristics()));
 
 			}
-		 }
-		 
+		}
 		
-		 
+		System.out.println("Animals going to fight");
+		int a1 = animalSelection();
+		int a2 = animalSelection();
+		System.out.println(animal1 = animals.get(a1).getNameOfAnimal());
+		System.out.println(animal2 = animals.get(a2).getNameOfAnimal());
 		
-		 
+		fightAnimals(a1,a2);
 	}
 	
+	public int animalSelection()
+	{
+		int selectAnimal;
+		selectAnimal=(int) (Math.random()*4)+1;
+		return selectAnimal;
+	}
+	public void fightAnimals(int animal1 ,int animal2)
+	{
+		if(animals.get(animal1).getHungryLevel()>animals.get(animal2).getHungryLevel())
+		{
+			
+			System.out.println(animals.get(animal1).getNameOfAnimal()+"Wins");
+		}
+	
+	    else
+	    {
+		  System.out.println(animals.get(animal2).getNameOfAnimal()+"Wins");
+	    }
+    } 
 }
