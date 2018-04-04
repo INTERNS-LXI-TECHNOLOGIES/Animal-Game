@@ -42,11 +42,21 @@ public String getTypeOfAnimal()
 	return typeOfAnimal;
 }
 	
-public void inputLionDetails()
-{
- 
- 
-}
-
+	public void inputLionDetails()
+	{}
+	public void inputDeerDetails()
+	{}
+	public void inputRabbitDetails()
+	{}
+	public void inputTigerDetails()
+	{}
+	public void setLionLevels()
+	{}
+	public void setDeerLevels()
+	{}
+	public void setRabbitLevels()
+	{}
+	public void setTigerLevels()
+	{}
 	
 }

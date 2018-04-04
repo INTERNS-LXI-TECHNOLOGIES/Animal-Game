@@ -15,8 +15,8 @@ public void createAnimals()
 {
 	animals.add(new Lion());
 	animals.add(new Deer());
-	animals.add(new Tiger());
 	animals.add(new Rabbit());
+	animals.add(new Tiger());
 
 }
 
@@ -48,45 +48,54 @@ public void inputForestDetails()
 	System.out.println("********"+getName()+"********");
 	
 	System.out.println("*****ANIMALS ARE*****");
-	for(int j = 0;j<4;j++)
-	{
+    //  for(int j = 0;j<4;j++)
+	//{
 		
-	System.out.println(animals.get(j).getTypeOfAnimal());
+	//System.out.println(animals.get(j).getTypeOfAnimal());
 	/*System.out.println(animals.get(1).getName());
 	System.out.println(animals.get(2).getName());
 	System.out.println(animals.get(3).getName());*/
-	}
+	//}
 	initialization();
 	
 }
 
 public void initialization()
 {
+	
 	for(int i=0;i<animals.size();i++)
 	{
-		if(animals.get(i)==animals.get(0))
+		if(i==0)
 		{
-			animals.get(i).setHungeryLevel((int)(Math.random()*50));
-			animals.get(i).setStrengthLevel((int)(Math.random()*100));
+			
+			animals.get(i).inputLionDetails();
+			animals.get(i).setLionLevels();
 		}
-		if(animals.get(i)==animals.get(1))
+		if(i==1)
 		{
-			animals.get(i).setHungeryLevel((int)(Math.random()*50));
-			animals.get(i).setStrengthLevel((int)(Math.random()*100));
+			animals.get(i).inputDeerDetails();
+			animals.get(i).setDeerLevels();
 		}
-		if(animals.get(i)==animals.get(2))
+		if(i==2)
 		{
-			animals.get(i).setHungerLevel((int)(Math.random()*50));
-			animals.get(i).setStrengthLevel((int)(Math.random()*100));
+			animals.get(i).inputRabbitDetails();
+			animals.get(i).setRabbitLevels();
 		}
-		if(animals.get(i)==animals.get(3))
+		if(i==3)
 		{
-			animals.get(i).setHungryLevel((int)(Math.random()*50));
-			animals.get(i).setStrengthLevel((int)(Math.random()*100));
+			animals.get(i).inputTigerDetails();
+			
+			animals.get(i).setTigerLevels();
 		}
+		
 	}	
-
+	
 }
+	public void inputGameImplimentation()
+	{
+		System.out.println("ANIMALS ARE ENTERED INTO THE GAME :");
+		System.out.println("ANIMALS ARE REDY TO FIGTH :");
+	}
 
 
 
