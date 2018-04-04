@@ -10,26 +10,29 @@ public class Forest
 	String name;
 	
 	ArrayList<Animal> animals = new ArrayList <>();
-	Tiger t = new Tiger();
-	Rabbit r = new Rabbit();
-	Lion l = new Lion();
-	Deer d = new Deer();
+	Animal t = new Tiger();
+	Animal r = new Rabbit();
+	Animal l = new Lion();
+	Animal d = new Deer();
 	
 	public void animalType()
 	{
 		animals.add(new Tiger());
 		System.out.println(animals.get(animals.size()-1).typeName());
-		t.setHungryLevel();	
-		
+		t.setHungryLevel(60,100);	
+		t.setStrengthLevel(60,100);
 		animals.add(new Rabbit());
 		System.out.println(animals.get(animals.size()-1).typeName());
-		
+		r.setHungryLevel(10,20);	
+		r.setStrengthLevel(10,20);
 		animals.add(new Lion());
 		System.out.println(animals.get(animals.size()-1).typeName());
-		
+		l .setHungryLevel(60,100);
+		l.setStrengthLevel(60,100);
 		animals.add(new Deer());
 		System.out.println(animals.get(animals.size()-1).typeName());
-		
+		d.setHungryLevel(20,45);
+		d.setStrengthLevel(20,45);
 		//System.out.print(animals.contains(animals.get(animals.size()-1)));
 		/*for(int i = 0; i < animals.size(); i++) 
 		{   
